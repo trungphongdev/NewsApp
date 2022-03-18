@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/ivArticleImg"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Russia invades Ukraine Live updates - CNN"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/ivArticleImg"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="Russian forces inch toward the capital of Kyiv, with intensified fighting to the northeast and east of the city. Follow here for live news updates."
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+    <TextView
+        android:id="@+id/tvSource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BBC"
+        app:layout_constraintStart_toStartOf="@id/ivArticleImg"
+        app:layout_constraintTop_toBottomOf="@id/ivArticleImg"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/tvPublishAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10/2022"
+        app:layout_constraintStart_toStartOf="@id/tvSource"
+        app:layout_constraintTop_toBottomOf="@id/tvSource"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
